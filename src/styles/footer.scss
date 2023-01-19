@@ -1,0 +1,92 @@
+@import 'vars.scss';
+
+.footer {
+    background-color: $dark;
+    padding: 87px 0 83px 0;
+
+    &__title {
+        color: #FFFFFF;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 60px;
+        line-height: 67px;
+        color: #FFFFFF;
+        margin-bottom: 35px;
+    }
+
+    &__logo svg path {
+        transition: fill .3s ease;
+    }
+
+    &__logo:hover svg path,
+    &__logo:focus svg path {
+        fill: $blue;
+    }
+
+    &__contact-us-box {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 98px;
+    }
+
+    &__instagram-box {
+        margin-bottom: 51px;
+    }
+
+    &__subtitle {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 22px;
+        color: #FFFFFF;
+        margin-bottom: 28px;
+    }
+
+    &__img-wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__links {
+        display: flex;
+        justify-content: space-between;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 22px;
+        color: #FFFFFF;
+
+    }
+
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+
+    &__input {
+        background-color: transparent;
+        border: none;
+        border-bottom: 1px solid rgba($color: #ffffff, $alpha: 0.4);
+        padding: 10px 0;
+        color: #FFFFFF;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 22px;
+        margin-bottom: 50px;
+    }
+
+    &__button {
+        background-color: #FFFFFF;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 22px;
+        color: #000000;
+        padding: 10px 66px;
+        align-self: flex-start;
+    }
+    
+}

@@ -1,0 +1,162 @@
+@import 'vars.scss';
+
+.technology {
+    padding-bottom: 150px;
+
+    &__top {
+        position: relative;
+        padding-top: 37vw;
+        padding-bottom: 85px;
+        background-image: url(./img/technology-bg.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    &__play-btn {
+        position: absolute;
+        top: 60%;
+        left: 60%;
+    }
+
+    &__title {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 60px;
+        line-height: 67px;
+        max-width: 470px;
+        text-transform: uppercase;
+        color: $dark;
+        margin-bottom: 62px;
+    }
+
+    &__list {
+        padding-left: 25px;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 24px;
+        color: $dark;
+    }
+
+    &__list-item {
+        padding-left: 25px;
+        margin-bottom: 15px;
+    }
+
+    &__bottom {
+        padding-top: 115px;
+    }
+
+    &__small-gallery-box {
+        position: relative;
+        margin-bottom: 450px;
+    }
+
+    &__descr {
+        width: 350px;
+    }
+
+}
+
+.sm-gallery {
+    display: grid;
+    position: absolute;
+    right: 0;
+    // bottom: 0;
+    top: -440px;
+    grid-template-columns: 481px 208px;
+    grid-template-rows: 432px 300px;
+    grid-template-areas: 'a a' 
+    'b c';
+    row-gap: 24px;
+    column-gap: 30px;
+    padding: 72px 32px 53px 31px;
+    // bottom: 400px;
+    // transform: translateY(-400px);
+
+    z-index: 2;
+
+    &::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        border: 3px solid $dark;
+        border-radius: 200px 0px 300px;
+        z-index: 1;
+    }
+
+    &__img {
+        display: block;
+
+        &_1 {
+            border-top-left-radius: 400px;
+            grid-area: a;
+        }
+        &_2 {
+            border-bottom-left-radius: 400px;
+        }
+
+    }
+
+}
+
+.big-gallery {    
+    display: grid;
+    grid-template-columns: 300px 160px 289px 391px;
+    grid-template-rows: 340px 270px 270px;
+    gap: 20px;
+    grid-template-areas: 'a a b b'
+    'c d d e'
+    'descr f f f';
+
+    &__img {
+        width: 100%;
+        height: 100%;
+
+        &_1 {
+            grid-area: a;
+        }
+        &_2 {
+            grid-area: b;
+            border-radius: 0px 500px 0px 0px;
+        }
+        &_3 {
+            grid-area: c;
+            border-radius: 0px 0px 150px 0px;
+        }
+        &_4 {
+            grid-area: d;
+            border-radius: 0px 200px 0px 0px;
+        }
+        &_5 {
+            grid-area: e;
+            border-radius: 200px 0px 0px 0px;
+        }
+        &_6 {
+            grid-area: f;
+            border-radius: 0px 0px 0px 400px;
+        }
+    }
+
+    &__descr {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $blue;
+        grid-area: descr;
+        font-style: italic;
+        font-weight: 800;
+        font-size: 32px;
+        line-height: 39px;
+        text-align: center;
+        color: #FFFFFF;
+        border-radius: 0px 0px 0px 200px;
+
+        & span {
+            width: 60%;
+        }
+    }
+
+
+}

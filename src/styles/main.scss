@@ -1,0 +1,82 @@
+@import 'vars.scss';
+
+*,*::after,*::before {
+    box-sizing: border-box;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+p {
+    margin: 0;
+}
+
+h1,h2 { 
+    margin: 0;
+    font-family: 'Comfortaa', cursive;
+}
+
+h3 {
+    margin: 0;
+}
+
+button {
+    font-family: 'Comfortaa', cursive;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+    height: auto;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+ol {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    width: 100%;
+    font-family: 'Inter Tight', sans-serif; 
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.container {
+    max-width: 1300px;
+    padding: 0 50px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.buy-btn {
+    transition: color .3s ease, background-color .3s ease, border-color .3s ease;
+    border: none;
+    cursor: pointer;
+    font-weight: 400;
+}
+
+.buy-btn:hover,
+.buy-btn:focus {
+    color: $dark;
+    background-color: $green;
+    border-color: $green;
+}
+
+@import 'header.scss';
+@import 'info.scss';
+@import 'buy.scss';
+@import 'technology.scss';
+@import 'footer.scss';

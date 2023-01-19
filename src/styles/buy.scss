@@ -1,0 +1,97 @@
+@import 'vars.scss';
+
+.buy {
+    padding-top: 150px;
+    background-color: #FFFFFF;
+
+    &__inner {
+        display: flex;
+        align-items: center;
+    }
+
+    &__content {
+        margin-right: 98px;
+    }
+
+    &__title {
+        font-family: 'Comfortaa';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 60px;
+        line-height: 67px;
+        text-transform: uppercase;
+        color: $blue;
+        margin-bottom: 50px;
+    }
+
+    &__list {
+        position: relative;
+        width: 292px;
+        color: $dark;
+        margin-bottom: 50px;
+    }
+
+    &__list-item:not(:last-child) {
+        margin-bottom: 25px;
+    }
+
+    &__list-item:hover &__item-title {
+        color: $blue;
+    }
+
+    &__item-title {
+        text-transform: uppercase;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 22px;
+        transition: color .3s ease;
+    }
+
+    &__item-text {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 22px;
+        display: flex;
+        align-items: center;
+    }
+
+    &__price {
+        background-image: url(./img/svg/star.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 200px;
+        height: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        bottom: 0;
+        left: 110%;
+
+        font-style: normal;
+        font-weight: 700;
+        font-size: 35px;
+        line-height: 42px;
+        color: $dark;
+    }
+
+    &__button {
+        padding: 18px 197px;
+        font-family: 'Comfortaa';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 45px;
+        color: $blue;
+        background-color: transparent;
+        border: 1px solid $blue;
+    }
+
+    &__img {
+        height: fit-content;
+
+    }
+
+}
