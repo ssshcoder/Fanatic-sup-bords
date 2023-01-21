@@ -75,6 +75,11 @@
         font-size: 35px;
         line-height: 42px;
         color: $dark;
+        transition: .3s ease transform;
+
+        &:hover {
+            transform: scale(1.4);
+        }
     }
 
     &__button {

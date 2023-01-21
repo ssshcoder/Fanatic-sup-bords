@@ -42,20 +42,22 @@
         margin-bottom: 28px;
     }
 
-    &__img-wrapper {
+    &__img-list {
         display: flex;
         justify-content: space-between;
     }
 
-    &__links {
+    &__menu-links {
         display: flex;
         justify-content: space-between;
+    }
+
+    &__menu-item {
         font-style: normal;
         font-weight: 700;
         font-size: 18px;
         line-height: 22px;
         color: #FFFFFF;
-
     }
 
 }

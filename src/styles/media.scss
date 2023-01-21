@@ -1,0 +1,13 @@
+@media (max-width: 768px) {
+    .container {
+        padding: 0 15px;
+    }
+}
+
+
+@import 'vars';
+@import 'media-header';
+@import 'media-info';
+@import 'media-buy';
+@import 'media-technology';
+@import 'media-footer';
